@@ -112,6 +112,13 @@ def removeRow(value1,value2,file):
         
 def rowCount(file):
     return(len(file)-1)
+
+
+def retrieveAll(file):
+    data = []
+    for i in file:
+        data.append(file[i])
+    return data
                 
              
             
@@ -129,5 +136,6 @@ file = add_file('ss.csv')
 #print(getColumnValues("Gender",file))
 #print(removeColumn("Title",file))
 #print(removeRow("value1","value2",file))
-print(rowCount(file))
+#print(rowCount(file))
+#print(retrievAll(file))
 
